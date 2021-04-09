@@ -4,11 +4,11 @@ const userSchema = new mongoose.Schema({
   account: String,
   email: String,
   verificationCode: String,
-  verified: Bool,
+  verified: Boolean,
   tokens: Number,
-  referrelCode: Number,
+  referrelCode: String,
   referred: Number,
-  referrer: Number
+  referrer: String
 });
 
 const User = mongoose.model('User', userSchema);

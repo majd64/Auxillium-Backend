@@ -8,3 +8,5 @@ function makeid(length) {
    }
    return result.join('');
 }
+
+module.exports = {makeid};
